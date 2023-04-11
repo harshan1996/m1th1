@@ -1,0 +1,12 @@
+This implementation uses a class Indexer to encapsulate the code.
+The constructor initializes the instance variables for the pages, exclude words file, results file, exclude words list and results dictionary.
+
+There are three methods in the class Indexer.
+
+The read_exclude_words method reads the exclude words from the file.
+
+The clean_data method removes the unnecessary characters and returns a cleaned list of words.
+
+The index_of_words method reads the exclude words, iterates over each page, reads its contents, cleans the data using the help of clean_data method, and creates a dictionary with each word and its corresponding page numbers. The dictionary is then sorted, and the results are written to a file.
+
+Finally, if __name__ == '__main__': block initializes an instance of the Indexer class and calls the index_of_words method.
